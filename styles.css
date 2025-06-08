@@ -623,7 +623,7 @@ h3 {
 
 
 /*---- Responsive Styles for Category Sidebar----*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .content-wrapper {
         flex-direction: column;
     }
