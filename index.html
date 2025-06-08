@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Casually</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar">
+            <div class="logo"> <a href="index.html">
+                    <h1>Eat Casually</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="About.html">About us</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+
+
+    <!---------------- Hero Section ---------------->
+
+    <section id="home" class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="video/sushi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>Timeless Elegance, Crafted for You</h1>
+            <p>Discover our latest collection of luxury Feast.</p>
+            <a href="recipes.html" class="btn">Explore</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="small-container">
+        <h2 class="title">Recent Recipes</h2>
+        <!---------this is for recipe sections ------->
+        <main class="recipe-grid">
+
+            <!-- Recipe cards will be inserted here by JavaScript -->
+        </main>
+    </div>
+
+
+
+
+    <!----------- Recipe Modal -------------->
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="recipeDetails">
+                <!-- Recipe details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-------- Footer ----------->
+    <footer class="minimal-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Eat Casually</h3>
+                <p>We are here to let you cook, with ease.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="#">Shop All</a></li>
+                        <li><a href="#">The Science</a></li>
+                        <li><a href="#">Our Ethos</a></li>
+                        <li><a href="#">Herbal Index</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="icons">
+                        <a href="#">📸</a>
+                        <a href="#">🎵</a>
+                    </div>
+                    <span>© 2025 All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!---------- Script Recipe ----------->
+    <script>
+
+        const recipes = [
+            {
+                id: 1,
+                title: "Classic Pancakes",
+                description: "Fluffy, golden pancakes perfect for breakfast",
+                servings: 4,
+                cookingTime: 20,
+                imageUrl: "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81",
+                ingredients: [
+                    { amount: "1 1/2 cups", item: "all-purpose flour" },
+                    { amount: "3 1/2 teaspoons", item: "baking powder" },
+                    { amount: "1/4 teaspoon", item: "salt" },
+                    { amount: "1 tablespoon", item: "sugar" },
+                    { amount: "1 1/4 cups", item: "milk" },
+                    { amount: "1", item: "egg" },
+                    { amount: "3 tablespoons", item: "melted butter" }
+                ],
+                instructions: [
+                    "Mix flour, baking powder, salt, and sugar in a bowl",
+                    "In another bowl, whisk milk, egg, and melted butter",
+                    "Combine wet and dry ingredients until just mixed",
+                    "Heat a griddle or pan over medium heat",
+                    "Pour 1/4 cup batter for each pancake",
+                    "Cook until bubbles form, then flip and cook other side"
+                ]
+            },
+            {
+                id: 2,
+                title: "Classic Carbonara",
+                description: "Creamy spaghetti pasta",
+                servings: 1,
+                cookingTime: 30,
+                imageUrl: "https://images.unsplash.com/photo-1627207644206-a2040d60ecad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyYm9uYXJhfGVufDB8fDB8fHww",
+                ingredients: [
+                    { amount: "80 gm", item: "Spaghetti" },
+                    { amount: "40 gm", item: "Bacon" },
+                    { amount: "20 gm", item: "Butter" },
+                    { amount: "5 gm / 2 cloves", item: "Garlic Chopped" },
+                    { amount: "50 gm", item: "Cream" },
+                    { amount: "1", item: "Egg yolk" },
+                    { amount: "30 gm", item: "Cheese" },
+                    { amount: "To Taste", item: "Salt - Pepper" }
+
+                ],
+                instructions: [
+                    "Boil the spaghetti with little salt and oil in water for 8-10 min and keep the water",
+                    "Heat the pan and melt the butter in low flame or it will burn",
+                    "Add Becon and let it fry",
+                    "For veg replace bacon with Mushroom, capsicum and saute",
+                    "After that add chopped garlic",
+                    "pour 50 gm of cream to make it creamy",
+                    "Whisk the cream while adding egg yolk",
+                    "You can pour pasta water as you like and Cheese at the same time",
+                    "Mix the pasta with sauce and saute a bit",
+                    "Serve hot"
+
+                ]
+            },
+            {
+                id: 3,
+                title: "Chicken Tikka Masala",
+                description: "Spicy grilled chicken in tomato-cream sauce",
+                servings: 2,
+                cookingTime: 150,
+                imageUrl: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Q2hpY2tlbiUyMFRpa2thJTIwTWFzYWxhfGVufDB8fDB8fHww",
+                ingredients: [
+                    { amount: "500 gm", item: "Chicken breast (cubed)" },
+                    { amount: "150 gm", item: "Yogurt" },
+                    { amount: "1 tbsp", item: "Garam masala" },
+                    { amount: "1 tsp", item: "Turmeric" },
+                    { amount: "200 ml", item: "Tomato puree" },
+                    { amount: "100 ml", item: "Heavy cream" },
+                    { amount: "3 cloves", item: "Garlic (minced)" },
+                    { amount: "1 inch", item: "Ginger (grated)" },
+                    { amount: "1", item: "Onion (chopped)" },
+                    { amount: "2 tbsp", item: "Oil" },
+                    { amount: "To Taste", item: "Salt - Sugar" }
+                ],
+                instructions: [
+                    "Marinate chicken with yogurt, garam masala, turmeric, and salt for 30 mins.",
+                    "Heat oil in a pan. Sauté onions, garlic, and ginger until golden.",
+                    "Add marinated chicken and cook until lightly charred.",
+                    "Stir in tomato puree and simmer for 10 minutes.",
+                    "Pour in cream and adjust seasoning with salt/sugar. Serve with naan."
+                ]
+            }
+        ];
+    </script>
+
+    <script>
+        // DOM Elements
+        const recipeGrid = document.querySelector('.recipe-grid');
+        const modal = document.getElementById('recipeModal');
+        const closeBtn = document.querySelector('.close');
+        const recipeDetails = document.getElementById('recipeDetails');
+
+        // Get favorites from localStorage
+        let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+
+        // Create recipe cards
+        function createRecipeCards() {
+            recipeGrid.innerHTML = recipes.map(recipe => `
+        <div class="recipe-card" onclick="showRecipe(${recipe.id})">
+            <img src="${recipe.imageUrl}" alt="${recipe.title}">
+            <div class="recipe-card-content">
+                <h2>${recipe.title}</h2>
+                <p>${recipe.description}</p>
+                <div class="recipe-info">
+                    <span>🕒 ${recipe.cookingTime} mins</span>
+                    <span>👥 ${recipe.servings} servings</span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+        }
+
+        // Show recipe details
+        function showRecipe(id) {
+            const recipe = recipes.find(r => r.id === id);
+            const isFavorite = favorites.includes(id);
+
+            recipeDetails.innerHTML = `
+        <img src="${recipe.imageUrl}" alt="${recipe.title}">
+        <button class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${id})">
+            ${isFavorite ? '❤️' : '🤍'}
+        </button>
+        <h2>${recipe.title}</h2>
+        <p>${recipe.description}</p>
+        <div class="recipe-info">
+            <span>🕒 ${recipe.cookingTime} minutes</span>
+            <span>👥 ${recipe.servings} servings</span>
+        </div>
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+            ${recipe.ingredients.map(ing =>
+                `<li><strong>${ing.amount}</strong> ${ing.item}</li>`
+            ).join('')}
+        </ul>
+        <h3>Instructions</h3>
+        <ol class="instructions-list">
+            ${recipe.instructions.map(step =>
+                `<li>${step}</li>`
+            ).join('')}
+        </ol>
+    `;
+
+            modal.style.display = 'block';
+        }
+
+        // Toggle favorite
+        function toggleFavorite(id) {
+            const index = favorites.indexOf(id);
+            if (index === -1) {
+                favorites.push(id);
+            } else {
+                favorites.splice(index, 1);
+            }
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            showRecipe(id); // Refresh the recipe display
+        }
+
+        // Close modal
+        closeBtn.onclick = function () {
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Initialize the page
+        createRecipeCards();
+    </script>
+
+
+</body>
+
+</html>

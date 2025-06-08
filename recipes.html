@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Casually</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><a href="index.html">
+                    <h1>Eat Casually</h1>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="recipes.html" class="active">Recipes</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="About.html">About us</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+        <span class="search-icon">🔍</span>
+    </div>
+
+
+
+    <div class="content-wrapper">
+        <aside class="category-sidebar">
+            <h2>Categories</h2>
+            <ul class="category-list">
+                <li><button class="category-btn active" data-category="All">All</button></li>
+                <li><button class="category-btn" data-category="Vegan">Vegan</button></li>
+                <li><button class="category-btn" data-category="Veg">Veg</button></li>
+                <li><button class="category-btn" data-category="Non-Veg">Non-Veg</button></li>
+                <li><button class="category-btn" data-category="Bakery">Bakery</button></li>
+                <li><button class="category-btn" data-category="Salad">Salad</button></li>
+            </ul>
+        </aside>
+
+        <main class="recipe-grid">
+            <!-- Recipe cards will be inserted here by JavaScript -->
+        </main>
+    </div>
+
+
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="recipeDetails">
+                <!-- Recipe details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-------- Footer ----------->
+    <footer class="minimal-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Eat Casually</h3>
+                <p>We are here to let you cook, with ease.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="#">Shop All</a></li>
+                        <li><a href="#">The Science</a></li>
+                        <li><a href="#">Our Ethos</a></li>
+                        <li><a href="#">Herbal Index</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="icons">
+                        <a href="#">📸</a>
+                        <a href="#">🎵</a>
+                    </div>
+                    <span>© 2025 All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="recipes.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
