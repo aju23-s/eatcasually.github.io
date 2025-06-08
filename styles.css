@@ -268,7 +268,7 @@ img {
 }
 
 
-
+/*---- Category sidebar ----*/
 .content-wrapper {
     display: flex;
     gap: 20px;
@@ -617,6 +617,19 @@ h3 {
         margin: 2% auto;
         width: 95%;
         padding: 1rem;
+    }
+}
+
+
+
+/*---- Responsive Styles for Category Sidebar----*/
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .category-sidebar {
+        width: 100%;
     }
 }
 
