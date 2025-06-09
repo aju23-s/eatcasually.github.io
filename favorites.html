@@ -41,7 +41,7 @@
     <footer class="minimal-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>Eat Casually</h3>
+                <a href="index.html"><img src="Images/log.png"></a>
                 <p>We are here to let you cook, with ease.</p>
             </div>
 
@@ -76,6 +76,15 @@
 
     <script src="recipes.js"></script>
     <script src="favorites.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker registered:', reg.scope))
+                .catch(err => console.error('Service Worker registration failed:', err));
+        }
+    </script>
+
 </body>
 
 </html>

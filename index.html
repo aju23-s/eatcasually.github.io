@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat Casually</title>
+    <link rel="icon" type="image/x-icon" href="Images/log.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+
 </head>
 
 <body>
@@ -35,7 +38,7 @@
 
     <section id="home" class="hero">
         <video autoplay muted loop id="heroVideo">
-            <source src="sushi.mp4" type="video/mp4">
+            <source src="video/sushi.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-overlay">
@@ -86,7 +89,7 @@
     <footer class="minimal-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>Eat Casually</h3>
+                <a href="index.html"><img src="Images/log.png"></a>
                 <p>We are here to let you cook, with ease.</p>
             </div>
 
@@ -301,6 +304,16 @@
 
         // Initialize the page
         createRecipeCards();
+    </script>
+
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker registered:', reg.scope))
+                .catch(err => console.error('Service Worker registration failed:', err));
+        }
     </script>
 
 

@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feast Finder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header> 
+    <header>
         <div class="nav-bar">
-            <div class="logo"><a href="index.html"><h1>Eat Casually</h1></a></div>
-        <nav>
-            <a href="index.html" >Home</a>
-            <a href="recipes.html">Recipes</a>
-            <a href="favorites.html">Favorites</a>
-            <a href="About.html" class="active">About us</a>
-        </nav>
-       </div>
+            <div class="logo"><a href="index.html">
+                    <h1>Eat Casually</h1>
+                </a></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="About.html" class="active">About us</a>
+            </nav>
+        </div>
     </header>
-    
+
 
     <div class="testimionial">
         <div class="small-container">
             <h2 class="title">Power Team</h2>
             <div class="row">
-                <div class="col-4">	
-                    <h4>" Oh god what have I created in the name of fun. "</h4>	
-                    <img src="aj 1.jpg">
-                    <p>Founder: Mr. Aju Sharma</p>  
+                <div class="col-4">
+                    <h4>" Oh god what have I created in the name of fun. "</h4>
+                    <img src="Images/aj 1.jpg">
+                    <p>Founder: Mr. Aju Sharma</p>
                 </div>
-    
-                <div class="col-4">	
-                    <h4>" As I would like to say, Power of the Taste in the palm of my Hand. "</h4>	
-                    <img src="aj 2.jpg">
-                    <p>Photographer: Aj Sharma</p> 
+
+                <div class="col-4">
+                    <h4>" As I would like to say, Power of the Taste in the palm of my Hand. "</h4>
+                    <img src="Images/aj 2.jpg">
+                    <p>Photographer: Aj Sharma</p>
                 </div>
-    
-                <div class="col-4">	
-                    <h4>" Awesome work environment and lovely team. "</h4>	
-                    <img src="aj 3.jpg">
-                    <p>Model: Aju Sh</p>  
+
+                <div class="col-4">
+                    <h4>" Awesome work environment and lovely team. "</h4>
+                    <img src="Images/aj 3.jpg">
+                    <p>Model: Aju Sh</p>
                 </div>
             </div>
         </div>
     </div>
-    
 
-     <!-------- Footer ----------->
+
+    <!-------- Footer ----------->
     <footer class="minimal-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>Eat Casually</h3>
+                <a href="index.html"><img src="Images/log.png"></a>
                 <p>We are here to let you cook, with ease.</p>
             </div>
 
@@ -85,5 +89,15 @@
 
     <script src="recipes.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker registered:', reg.scope))
+                .catch(err => console.error('Service Worker registration failed:', err));
+        }
+    </script>
+
 </body>
+
 </html>

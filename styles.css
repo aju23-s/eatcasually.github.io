@@ -267,8 +267,8 @@ img {
     color: #666;
 }
 
+/*----Content Sidebar----*/
 
-/*---- Category sidebar ----*/
 .content-wrapper {
     display: flex;
     gap: 20px;
@@ -313,6 +313,16 @@ img {
 }
 
 
+/*---- Responsive Styles ----*/
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .category-sidebar {
+        width: 100%;
+    }
+}
 
 
 
@@ -532,6 +542,12 @@ h3 {
 .footer-brand p {
   color: var(--primary-color);
 }
+
+.footer-brand img{
+    width: 10rem;
+    height: 10rem;
+}
+
 .footer-links {
   display: flex;
   flex: 1;
@@ -583,6 +599,7 @@ h3 {
   color: #555;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer-content {
@@ -617,19 +634,6 @@ h3 {
         margin: 2% auto;
         width: 95%;
         padding: 1rem;
-    }
-}
-
-
-
-/*---- Responsive Styles for Category Sidebar----*/
-@media (max-width: 600px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .category-sidebar {
-        width: 100%;
     }
 }
 
