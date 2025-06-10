@@ -120,33 +120,16 @@ h1 {
 
 
 
-/* Navigation styles */
-nav {
+/*--------- Navigation styles ------------*/
+
+
+.nav-bar {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 20px;
-}
-
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-nav a.active {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-img {
-    height: 100%;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
 }
 
 .logo a {
@@ -154,12 +137,45 @@ img {
     color: var(--white);
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
 
 
 
 
-/* Hero Section */
+
+
+
+/*------------ Hero Section -------------*/
 .hero {
     position: relative;
     height: 100vh;
@@ -210,6 +226,10 @@ img {
 .hero-overlay .btn:hover {
     background: var(--second-color);
 }
+
+
+
+
 
 
 
@@ -277,7 +297,14 @@ img {
     color: #666;
 }
 
-/*----Content Sidebar----*/
+
+
+
+
+
+
+
+/*----------   Content Sidebar   ----------*/
 
 .content-wrapper {
     display: flex;
@@ -333,6 +360,10 @@ img {
         width: 100%;
     }
 }
+
+
+
+
 
 
 
@@ -639,7 +670,50 @@ h3 {
 }
 
 
-/* Responsive */
+
+
+
+
+/*------------ Responsive ---------------*/
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+
+    .hero-overlay .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -668,6 +742,7 @@ h3 {
     .recipe-grid {
         grid-template-columns: 1fr;
         padding: 1rem;
+
     }
 
     .modal-content {
@@ -679,14 +754,6 @@ h3 {
 
 
 
-
-
-
-@media only screen and (max-width: 600px) {
-    .nav-bar {
-        display: grid;
-    }
-}
 
 
 @media only screen and (max-width: 500px) {
