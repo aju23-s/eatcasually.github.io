@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat Casually</title>
+    <title>About us</title>
+    <meta name="description" content="Eat Casually – bringing luxury home cooking to your kitchen with easy gourmet recipes, fine dining meals made simple, and elevated home chef inspiration.">
+    <meta name="keywords" content="luxury home cooking, easy gourmet recipes, fine dining at home, simple luxury food, home chef, elevated meals">
     <link rel="icon" type="image/x-icon" href="Images/log.png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,50 +22,29 @@
             <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="recipes.html" class="active">Recipes</a>
+                <a href="recipes.html">Recipes</a>
                 <a href="favorites.html">Favorites</a>
                 <a href="About.html">About us</a>
             </nav>
         </div>
     </header>
 
-
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search recipes...">
-        <span class="search-icon">🔍</span>
-    </div>
-
-
-
-    <div class="content-wrapper">
-        <aside class="category-sidebar">
-            <h2>Categories</h2>
-            <ul class="category-list">
-                <li><button class="category-btn active" data-category="All">All</button></li>
-                <li><button class="category-btn" data-category="Vegan">Vegan</button></li>
-                <li><button class="category-btn" data-category="Veg">Veg</button></li>
-                <li><button class="category-btn" data-category="Non-Veg">Non-Veg</button></li>
-                <li><button class="category-btn" data-category="Bakery">Bakery</button></li>
-                <li><button class="category-btn" data-category="Salad">Salad</button></li>
-            </ul>
-        </aside>
-
-        <main class="recipe-grid">
-            <!-- Recipe cards will be inserted here by JavaScript -->
-        </main>
-    </div>
-
-
-
-    <!-- Recipe Modal -->
-    <div id="recipeModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="recipeDetails">
-                <!-- Recipe details will be inserted here -->
-            </div>
-        </div>
-    </div>
+    <!---------- Our Ethos------------->
+    <main class="ethos-section" style="padding: 2rem; max-width: 900px; margin: auto;">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Our Ethos</h2>
+        <p style="font-size: 1.1rem; line-height: 1.7;">
+            At <strong>Eat Casually</strong>, we are redefining what it means to enjoy luxury food at home. Our ethos is centered on making gourmet-style cooking simple, accessible, and stress-free — because we believe that exceptional meals should be enjoyed by everyone, every day.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.7;">
+            We focus on creating <strong>easy gourmet recipes</strong> that blend fine dining aesthetics with the simplicity of home cooking. Whether it’s an elegant pasta, a perfectly seared protein, or a beautifully plated dessert, each dish is carefully designed to be both indulgent and doable.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.7;">
+            Our goal is to help you feel confident in the kitchen — with clear, step-by-step instructions, accessible ingredients, and flavor-forward techniques that deliver a luxurious experience without complexity. From everyday meals to special occasions, we’re here to bring you the best of both worlds: <strong>luxury on your plate and comfort in your kitchen</strong>.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.7;">
+            Welcome to Eat Casually — where <strong>fine dining meets everyday living</strong>, and cooking becomes an inspiring, enjoyable journey.
+        </p>
+    </main>
 
     <!-------- Footer ----------->
     <footer class="minimal-footer">
@@ -99,8 +80,6 @@
         </div>
     </footer>
 
-
-
     <script src="recipes.js"></script>
     <script src="script.js"></script>
 
@@ -120,8 +99,6 @@
             navLinks.classList.toggle('show');
         });
     </script>
-
-
 
 </body>
 

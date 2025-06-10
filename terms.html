@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Conditions</title>
+    <link rel="icon" type="image/x-icon" href="Images/log.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Eat Casually</h1>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="About.html">About us</a>
+                <a href="terms.html" class="active">Terms & Conditions</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 2rem; max-width: 900px; margin: auto;">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Terms and Conditions</h2>
+
+        <p style="font-size: 1.1rem; line-height: 1.7;">
+            Welcome to <strong>Eat Casually</strong> (www.eatcasually.com). By accessing or using this website, you agree to comply with and be bound by the following terms and conditions of use. If you do not agree with any part of these terms, please do not use our site.
+        </p>
+
+        <h3>1. Use of Website</h3>
+        <p>
+            This website is intended for personal, non-commercial use. All content including recipes, images, and blog posts are the intellectual property of Eat Casually unless otherwise stated. You may not copy, distribute, or modify any content without prior written permission.
+        </p>
+
+        <h3>2. Intellectual Property</h3>
+        <p>
+            All trademarks, logos, and content are owned by Eat Casually or its content creators. Unauthorized use may violate copyright, trademark, and other applicable laws.
+        </p>
+
+        <h3>3. Recipe Disclaimer</h3>
+        <p>
+            All recipes and cooking advice provided on this site are for informational purposes only. Results may vary depending on ingredients, equipment, and individual skills. Eat Casually is not responsible for any outcome related to the preparation or consumption of our recipes.
+        </p>
+
+        <h3>4. User Conduct</h3>
+        <p>
+            Users must not post or transmit any material that is unlawful, harmful, defamatory, obscene, or otherwise objectionable. We reserve the right to remove any content and block users who violate these terms.
+        </p>
+
+        <h3>5. Third-Party Links</h3>
+        <p>
+            Our website may contain links to external websites. Eat Casually is not responsible for the content, policies, or practices of any third-party sites.
+        </p>
+
+        <h3>6. Privacy</h3>
+        <p>
+            Please review our Privacy Policy to understand how we collect and use your data. By using this site, you consent to our data practices as described.
+        </p>
+
+        <h3>7. Limitation of Liability</h3>
+        <p>
+            Eat Casually is not liable for any direct or indirect damages resulting from the use or misuse of our website or its content.
+        </p>
+
+        <h3>8. Changes to Terms</h3>
+        <p>
+            We may update these terms at any time. Your continued use of the website following any changes indicates your acceptance of the new terms.
+        </p>
+
+        <h3>9. Contact Us</h3>
+        <p>
+            If you have any questions about these Terms and Conditions, please contact us at:  
+            <a href="mailto:info@eatcasually.com">Mail us</a>
+        </p>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html"><img src="Images/log.png" alt="Eat Casually Logo" /></a>
+                <p>We are here to let you cook, with ease.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="our_ethos.html">Our Ethos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="icons">
+                        <a href="#"><img src="Images/insta.png" alt="Instagram" /></a>
+                        <a href="#"><img src="Images/gmail.png" alt="Gmail" /></a>
+                    </div>
+                    <span>© 2025 All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="recipes.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker registered:', reg.scope))
+                .catch(err => console.error('Service Worker registration failed:', err));
+        }
+
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
