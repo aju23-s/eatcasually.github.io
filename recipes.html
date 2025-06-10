@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat Casually</title>
-    <link rel="icon" type="image/x-icon" href="log.png">
+    <link rel="icon" type="image/x-icon" href="Images/log.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="nav-bar">
-            <div class="logo"><a href="index.html">
+            <div class="logo">
+                <a href="index.html">
                     <h1>Eat Casually</h1>
                 </a>
             </div>
-            <nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="recipes.html" class="active">Recipes</a>
                 <a href="favorites.html">Favorites</a>
@@ -67,7 +69,7 @@
     <footer class="minimal-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html"><img src="log.png"></a>
+                <a href="index.html"><img src="Images/log.png"></a>
                 <p>We are here to let you cook, with ease.</p>
             </div>
 
@@ -88,8 +90,8 @@
                 </div>
                 <div class="footer-social">
                     <div class="icons">
-                        <a href="#"><img src="insta.png"></a>
-                        <a href="#"><img src="gmail.png"></a>
+                        <a href="#"><img src="Images/insta.png"></a>
+                        <a href="#"><img src="Images/gmail.png"></a>
                     </div>
                     <span>© 2025 All Rights Reserved</span>
                 </div>
@@ -108,6 +110,15 @@
                 .then(reg => console.log('Service Worker registered:', reg.scope))
                 .catch(err => console.error('Service Worker registration failed:', err));
         }
+    </script>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
     </script>
 
 
