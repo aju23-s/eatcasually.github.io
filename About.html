@@ -12,10 +12,13 @@
 <body>
     <header>
         <div class="nav-bar">
-            <div class="logo"><a href="index.html">
+            <div class="logo">
+                <a href="index.html">
                     <h1>Eat Casually</h1>
-                </a></div>
-            <nav>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="favorites.html">Favorites</a>
@@ -23,6 +26,7 @@
             </nav>
         </div>
     </header>
+
 
 
     <div class="testimionial">
@@ -76,8 +80,8 @@
                 </div>
                 <div class="footer-social">
                     <div class="icons">
-                        <a href="#"><img src="Images/insta.png"></a>
-                        <a href="#"><img src="Images/gmail.png"></a>
+                        <a href="#"><img src="insta.png"></a>
+                        <a href="#"><img src="gmail.png"></a>
                     </div>
                     <span>© 2025 All Rights Reserved</span>
                 </div>
@@ -96,6 +100,16 @@
                 .catch(err => console.error('Service Worker registration failed:', err));
         }
     </script>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
 
 </body>
 
