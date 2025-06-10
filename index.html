@@ -17,19 +17,21 @@
 
     <header>
         <div class="nav-bar">
-            <div class="logo"> <a href="index.html">
+            <div class="logo">
+                <a href="index.html">
                     <h1>Eat Casually</h1>
                 </a>
             </div>
-            <nav>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
                 <a href="index.html" class="active">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="favorites.html">Favorites</a>
                 <a href="About.html">About us</a>
             </nav>
-
         </div>
     </header>
+
 
 
 
@@ -315,6 +317,16 @@
                 .catch(err => console.error('Service Worker registration failed:', err));
         }
     </script>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
 
 
 </body>
