@@ -12,10 +12,13 @@
 <body>
     <header>
         <div class="nav-bar">
-            <div class="logo"><a href="index.html">
+            <div class="logo">
+                <a href="index.html">
                     <h1>Eat Casually</h1>
-                </a></div>
-            <nav>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="favorites.html" class="active">Favorites</a>
@@ -23,6 +26,7 @@
             </nav>
         </div>
     </header>
+
 
     <main class="recipe-grid" id="favoriteRecipes">
         <!-- Favorite recipe cards will be inserted here by JavaScript -->
@@ -83,6 +87,16 @@
                 .catch(err => console.error('Service Worker registration failed:', err));
         }
     </script>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
 
 </body>
 
