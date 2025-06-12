@@ -156,13 +156,12 @@ const recipes = [
     "Add marinated chicken and cook until lightly charred.",
     "Stir in tomato and simmer for 10 minutes.",
     "Pour in cream and adjust seasoning with salt/sugar. Serve with naan."
-  ],
-  "tips": [
+  "TIPS"
     "Use ghee instead of oil for a richer flavor.",
     "Add chili powder if you prefer it spicy.",
     "Crushed fenugreek leaves (kasuri methi) add a restaurant-style aroma.",
-    "Overnight marination deepens the flavor."
-  ]
+    "Overnight marination deepens the flavor.
+    ]
     },
     {
         id: 7,
