@@ -149,19 +149,20 @@ const recipes = [
             { amount: "1", item: "Onion (chopped)" },
             { amount: "2 tbsp", item: "Oil" },
             { amount: "To Taste", item: "Salt - Sugar" }
-        ],
+        ],    
         "instructions": [
     "Marinate chicken with yogurt, garam masala, turmeric, and salt for 30 mins.",
     "Heat oil in a pan. Sauté onions, garlic, and ginger until golden.",
     "Add marinated chicken and cook until lightly charred.",
     "Stir in tomato and simmer for 10 minutes.",
     "Pour in cream and adjust seasoning with salt/sugar. Serve with naan."
-  "TIPS"
+  ],
+  "tips": [
     "Use ghee instead of oil for a richer flavor.",
     "Add chili powder if you prefer it spicy.",
     "Crushed fenugreek leaves (kasuri methi) add a restaurant-style aroma.",
-    "Overnight marination deepens the flavor.
-    ]
+    "Overnight marination deepens the flavor."
+  ]
     },
     {
         id: 7,
