@@ -786,8 +786,11 @@ main p {
     }
 }
 
-@media only screen and (max-width: 424px) {
+@media only screen and (max-width: 480px) {
     nav {
         display: grid;
+    }
+    body {
+        font-size: 14px;
     }
 }
