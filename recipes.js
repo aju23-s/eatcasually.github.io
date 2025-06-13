@@ -232,16 +232,16 @@ const recipes = [
         imageUrl: "https://plus.unsplash.com/premium_photo-1677686707252-16013f466e61?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Veg",
         ingredients: [
-            { amount: "4 slices", item: "Ciabatta bread" },
+            { amount: "4 slices", item: "Bread " },
             { amount: "2", item: "Tomatoes (diced)" },
             { amount: "2", item: "Onion (diced)" },
             { amount: "2 cloves", item: "Garlic (minced)" },
-            { amount: "Handful", item: "Fresh basil (chopped)" },
+            { amount: "Handful", item: "Fresh basil or Coriander(chopped)" },
             { amount: "2 tbsp", item: "Olive oil" },
             { amount: "To Taste", item: "Salt - Pepper" }
         ],
         instructions: [
-            "Toast ciabatta slices until golden.",
+            "Toast bread slices until golden.",
             "Rub one side of each slice with garlic.",
             "Add Mayonnaise if Possible ",
             "Mix tomatoes, onions, basil (Or Coriander), olive oil, salt, and pepper in a bowl.",
@@ -295,7 +295,7 @@ const recipes = [
             { amount: "200 gm", item: "Paneer (cubed)" },
             { amount: "3 cups", item: "Spinach leaves" },
             { amount: "1", item: "Onion (chopped)" },
-            { amount: "2", item: "Tomatoes (pureed)" },
+            { amount: "2", item: "Tomatoes (chopped or blended)" },
             { amount: "1 tsp", item: "Cumin seeds" },
             { amount: "1/2 tsp", item: "Turmeric" },
             { amount: "1 tsp", item: "Coriander powder" },
@@ -303,8 +303,9 @@ const recipes = [
         ],
         instructions: [
             "Blanch spinach in boiling water, then blend into a puree.",
+            "Sautè or fry paneer as your liking",
             "Heat ghee. Temper cumin seeds and sauté onions until golden.",
-            "Add tomato puree and spices. Cook until thickened.",
+            "Add tomato  and spices. Cook until thickened.",
             "Mix in spinach puree and paneer cubes. Simmer for 8-10 minutes."
         ]
     },
@@ -377,6 +378,53 @@ const recipes = [
             "Add Cooked chicken and coat it well in the gravy. Cover and cook for 15–20 minutes until the chicken is fully cooked and tender.",
             "Garnish with chopped coriander leaves and serve hot with rice or naan."
         ]
-    }
+    },
+    {
+  id: 14,
+  title: "Aloo Tama",
+  description: "Traditional Nepali curry made with potatoes and fermented bamboo shoots",
+  servings: 4,
+  cookingTime: 40,
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/78/Aloo_Tama.jpg",
+  category: "Veg",
+
+  ingredients: [
+    // Base vegetables
+    { amount: "2 medium", item: "Potatoes (peeled & diced)" },
+    { amount: "1 cup", item: "Tama (fermented bamboo shoots, rinsed)" },
+    { amount: "1/2 cup", item: "Black-eyed peas (boiled)" },
+
+    // Aromatics & base
+    { amount: "1", item: "Onion (chopped)" },
+    { amount: "2", item: "Tomatoes (chopped)" },
+    { amount: "3 cloves", item: "Garlic (minced)" },
+    { amount: "1 inch", item: "Ginger (grated)" },
+    { amount: "2", item: "Green chilies (sliced, optional)" },
+
+    // Spices
+    { amount: "1/2 tsp", item: "Turmeric powder" },
+    { amount: "1 tsp", item: "Cumin powder" },
+    { amount: "1 tsp", item: "Coriander powder" },
+    { amount: "1/2 tsp", item: "Chili powder (optional)" },
+    { amount: "To taste", item: "Salt" },
+
+    // Oil & garnish
+    { amount: "2 tbsp", item: "Mustard oil (or vegetable oil)" },
+    { amount: "As needed", item: "Fresh coriander – for garnish" }
+  ],
+
+  instructions: [
+    "Heat mustard oil in a pan until it begins to smoke lightly.",
+    "Add chopped onions, garlic, and ginger. Sauté until golden brown.",
+    "Add turmeric, cumin, coriander, and chili powder. Stir briefly.",
+    "Add diced potatoes and cook for 5–7 minutes, stirring occasionally.",
+    "Add chopped tomatoes and green chilies. Cook until tomatoes soften.",
+    "Add rinsed tama (fermented bamboo shoots) and boiled black-eyed peas. Mix well.",
+    "Pour in enough water to make a curry. Simmer until potatoes are fully cooked (about 10 minutes).",
+    "Season with salt. Adjust spices and water to your liking.",
+    "Garnish with fresh coriander leaves and serve hot with steamed rice or roti."
+  ]
+}
+
 
 ];
