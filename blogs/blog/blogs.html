@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Blogs | Eat Casually</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="Images/log.png">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Eat Casually</h1>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="About.html">About us</a>
+                <a href="blogs.html" class="active">Blogs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-list">
+        <section>
+            <h2>Latest Blog Posts</h2>
+            <div id="blog-container" class="blog-grid"></div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html"><img src="Images/log.png"></a>
+                <p>We are here to let you cook, with ease.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Ethos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="icons">
+                        <a href="#"><img src="Images/insta.png"></a>
+                        <a href="#"><img src="Images/gmail.png"></a>
+                    </div>
+                    <span>© 2025 All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        fetch('blog/blog-data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('blog-container');
+                data.reverse().forEach(post => {
+                    const card = document.createElement('div');
+                    card.className = 'blog-card';
+                    card.innerHTML = `
+                        <a href="blog/${post.slug}.html">
+                            <h3>${post.title}</h3>
+                            <p><em>${post.date}</em> • <strong>${post.category}</strong></p>
+                            <p>${post.intro}</p>
+                            <span class="read-more">Read More →</span>
+                        </a>
+                    `;
+                    container.appendChild(card);
+                });
+            });
+    </script>
+</body>
+
+</html>
