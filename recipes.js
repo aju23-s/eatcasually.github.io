@@ -379,10 +379,10 @@ const recipes = [
     {
   id: 14,
   title: "Aloo Tama",
-  description: "Traditional Nepali curry made with potatoes and fermented bamboo shoots",
+  description: "Traditional Nepali curry made with potatoes ( alu ) and fermented bamboo shoots",
   servings: 4,
   cookingTime: 40,
-  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/78/Aloo_Tama.jpg",
+  imageUrl: "https://junifoods.com/wp-content/uploads/2023/02/Bamboo-Shoot-Curry-Tama-Ko-Tarkari-%E0%A4%A4%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%95%E0%A5%8B-%E0%A4%A4%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80-2-300x300.jpg",
   category: "Veg",
 
   ingredients: [
