@@ -1,0 +1,36 @@
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.blog-card p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: #007BFF;
+    font-weight: 500;
+}
