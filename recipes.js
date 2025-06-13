@@ -142,7 +142,7 @@ const recipes = [
             { amount: "150 gm", item: "Yogurt" },
             { amount: "1 tbsp", item: "Garam masala" },
             { amount: "1 tsp", item: "Turmeric" },
-            { amount: "200 ml", item: "Tomato" },
+            { amount: "200 ml", item: "Tomato (Chopped)" },
             { amount: "100 ml", item: "Heavy cream" },
             { amount: "3 cloves", item: "Garlic (minced)" },
             { amount: "1 inch", item: "Ginger (grated)" },
@@ -150,18 +150,15 @@ const recipes = [
             { amount: "2 tbsp", item: "Oil" },
             { amount: "To Taste", item: "Salt - Sugar" }
         ],    
-        "instructions": [
-    "Marinate chicken with yogurt, garam masala, turmeric, and salt for 30 mins.",
-    "Heat oil in a pan. Sauté onions, garlic, and ginger until golden.",
-    "Add marinated chicken and cook until lightly charred.",
-    "Stir in tomato and simmer for 10 minutes.",
-    "Pour in cream and adjust seasoning with salt/sugar. Serve with naan."
-  ],
-  "tips": [
-    "Use ghee instead of oil for a richer flavor.",
-    "Add chili powder if you prefer it spicy.",
-    "Crushed fenugreek leaves (kasuri methi) add a restaurant-style aroma.",
-    "Overnight marination deepens the flavor."
+        instructions: [
+  "In a large bowl, combine chicken cubes with yogurt, garam masala, turmeric, and salt. Mix well, cover, and marinate for at least 30 minutes (or overnight for deeper flavor).",
+  "Heat oil or ghee in a pan over medium heat. Add chopped onions and sauté until soft and golden brown.",
+  "Stir in the minced garlic and grated ginger. Cook for 1–2 minutes until fragrant.",
+  "Add the marinated chicken pieces to the pan. Cook on high heat for 5–7 minutes until the chicken is lightly charred on the outside.",
+  "Add in the tomato and stir well. Reduce the heat to medium-low and simmer for 10 minutes, allowing the chicken to cook through and absorb the tomato flavor.",
+  "Add the heavy cream and stir to combine. Simmer gently for another 3–5 minutes, stirring occasionally.",
+  "Taste the curry and adjust salt and sugar as needed. If desired, add red chili powder for more heat or crushed kasuri methi for a restaurant-style finish.",
+  "Turn off the heat. Let it rest for 2 minutes, then serve hot with naan, roti, or steamed basmati rice."
   ]
     },
     {
