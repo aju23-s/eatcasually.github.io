@@ -63,7 +63,7 @@ const recipes = [
             { amount: "1", item: "Cucumber (chopped)" },
             { amount: "2", item: "Tomatoes (wedged)" },
             { amount: "1/2", item: "Red onion (sliced)" },
-            { amount: "100 gm", ites: "Kalamata olives" },
+            { amount: "100 gm", item: "Kalamata olives" },
             { amount: "150 gm", item: "Feta cheese (cubed)" },
             { amount: "3 tbsp", item: "Olive oil" },
             { amount: "1 tbsp", item: "Oregano" },
