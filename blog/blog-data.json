@@ -1,16 +1,72 @@
 [
   {
-    "title": "Luxury Ingredients You Already Own",
-    "slug": "luxury-ingredients",
-    "date": "2025-06-10",
-    "category": "Ingredients",
-    "intro": "Discover pantry staples that bring luxury to your home-cooked meals."
+    "title": "5-Star Pasta Dishes You Can Cook at Home",
+    "slug": "five-star-pasta-home",
+    "date": "2025-06-13",
+    "category": "Italian",
+    "intro": "Learn how to recreate luxurious restaurant-style pasta dishes right in your own kitchen using simple ingredients."
   },
   {
-    "title": "Quick Gourmet Pasta in 15 Minutes",
-    "slug": "gourmet-pasta",
-    "date": "2025-06-12",
-    "category": "Meals",
-    "intro": "A creamy, rich pasta you can whip up faster than takeout."
+    "title": "Cooking Truffle-Infused Recipes Without the Price Tag",
+    "slug": "truffle-recipes-budget",
+    "date": "2025-06-13",
+    "category": "Gourmet Hacks",
+    "intro": "Discover how to bring the taste of truffle to your meals affordably, with ingredients available at your local store."
+  },
+  {
+    "title": "The Art of Homemade Creamy Risotto",
+    "slug": "homemade-creamy-risotto",
+    "date": "2025-06-13",
+    "category": "Continental",
+    "intro": "Master the technique of a silky, creamy risotto in your own kitchen with this step-by-step guide."
+  },
+  {
+    "title": "Plating Like a Pro: How to Make Food Look Elegant",
+    "slug": "plating-like-a-pro",
+    "date": "2025-06-13",
+    "category": "Presentation",
+    "intro": "Elevate your dishes visually with easy plating tips to impress guests and elevate home dining."
+  },
+  {
+    "title": "Luxury Breakfast Ideas for Lazy Sundays",
+    "slug": "luxury-breakfast-ideas",
+    "date": "2025-06-13",
+    "category": "Brunch",
+    "intro": "Create indulgent and relaxing breakfasts that feel like a luxury hotel experience from the comfort of home."
+  },
+  {
+    "title": "Nepali Momo with Gourmet Twists",
+    "slug": "nepali-momo-gourmet",
+    "date": "2025-06-13",
+    "category": "Nepali Fusion",
+    "intro": "Learn to make classic momos with luxury fillings and creative sauces for a high-end street food vibe."
+  },
+  {
+    "title": "How to Build a Fancy Cheese Board on a Budget",
+    "slug": "fancy-cheese-board",
+    "date": "2025-06-13",
+    "category": "Appetizers",
+    "intro": "From supermarket to showstopper: Build a photo-worthy cheese board without overspending."
+  },
+  {
+    "title": "Date Night Dinners: Simple Yet Fancy Meals",
+    "slug": "date-night-dinners",
+    "date": "2025-06-13",
+    "category": "Romantic Recipes",
+    "intro": "Impress your partner with these elevated yet easy-to-make dinners perfect for cozy date nights."
+  },
+  {
+    "title": "Easy Chocolate Lava Cake with a Molten Center",
+    "slug": "easy-chocolate-lava",
+    "date": "2025-06-13",
+    "category": "Desserts",
+    "intro": "Make a decadent, gooey chocolate lava cake with basic pantry items in under 30 minutes."
+  },
+  {
+    "title": "Cooking with Saffron: Affordable Recipes that Shine",
+    "slug": "cooking-with-saffron",
+    "date": "2025-06-13",
+    "category": "Spices",
+    "intro": "Use just a pinch of saffron to create rich flavors and golden hues in these simple luxurious dishes."
   }
 ]
