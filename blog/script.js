@@ -1,0 +1,34 @@
+ // Add your blog posts here
+    const blogPosts = [
+      {
+        title: "Latest Food News: June 2025",
+        description: "Get the scoop on food recalls, pickle meals & more!",
+        image: "https://source.unsplash.com/800x600/?food,news",
+        link: "latest-food-news.html"
+      },
+      {
+        title: "Top 5 Healthy Snacks in 2025",
+        description: "Snack smarter with our expert-picked list of delicious and healthy options.",
+        image: "https://source.unsplash.com/800x600/?snacks,healthy",
+        link: "top-5-healthy-snacks.html"
+      },
+      // Add more blog posts here...
+    ];
+
+    const container = document.getElementById("blog-list");
+
+    blogPosts.forEach(post => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.onclick = () => window.location.href = post.link;
+
+      card.innerHTML = `
+        <img src="${post.image}" alt="${post.title}" />
+        <div class="card-content">
+          <div class="card-title">${post.title}</div>
+          <div class="card-desc">${post.description}</div>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
