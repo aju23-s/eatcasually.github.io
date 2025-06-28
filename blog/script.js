@@ -7,10 +7,10 @@
         link: "latest-food-news.html"
       },
       {
-        title: "Top 5 Healthy Snacks in 2025",
-        description: "Snack smarter with our expert-picked list of delicious and healthy options.",
-        image: "https://source.unsplash.com/800x600/?snacks,healthy",
-        link: "top-5-healthy-snacks.html"
+        title: "Rethinking Carbs: Why Choosing the Right Carbs Can Help You Live Longer",
+        description: "In today’s health-conscious world, carbs have developed a bad reputation. From keto diets to carb-cutting trends.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9JbBC58mPTqnSU6748dyZGih8sa7gsA0aiQ&s",
+        link: "Rethinking-carbs.html"
       },
       // Add more blog posts here...
     ];
