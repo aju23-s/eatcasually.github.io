@@ -5,7 +5,7 @@ const recipes = [
         description: "Fluffy, golden pancakes perfect for breakfast",
         servings: 4,
         cookingTime: 20,
-        imageUrl: "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81",
+        imageUrl: "https://www.allrecipes.com/thmb/FE0PiuuR0Uh06uVh1c2AsKjRGbc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-Good-old-Fashioned-Pancakes-mfs_002-0e249c95678f446291ebc9408ae64c05.jpg",
         category: "Bakery",
         ingredients: [
             { amount: "1 1/2 cups", item: "all-purpose flour" },
@@ -374,6 +374,86 @@ const recipes = [
             "Add Cooked chicken and coat it well in the gravy. Cover and cook for 15–20 minutes until the chicken is fully cooked and tender.",
             "Garnish with chopped coriander leaves and serve hot with rice or naan."
         ]
-    }
+    },
+    {
+    id: 14,
+    title: "Keema Noodles & Bok Choy",
+    description: "A spicy and savory noodle dish with keema, bok choy, and Nepali timur twist",
+    servings: 2,
+    cookingTime: 30,
+    imageUrl: "https://i.pinimg.com/736x/e3/8a/42/e38a42ae26fe273b9dacd036c1d6723a.jpg", // Replace with your image if needed
+    category: "Non-veg",
+    ingredients: [
+        { amount: "70 gm", item: "spaghetti (uncooked)" },
+        { amount: "15 gm", item: "chili flakes" },
+        { amount: "6 gm", item: "timur (Sichuan pepper)" },
+        { amount: "a pinch", item: "salt" },
+        { amount: "125 ml", item: "mustard oil" },
+        { amount: "40 gm", item: "onion, finely chopped" },
+        { amount: "25 gm", item: "ginger, minced" },
+        { amount: "25 gm", item: "garlic, minced" },
+        { amount: "800 gm", item: "keema (minced meat)" },
+        { amount: "6 gm", item: "red chili powder" },
+        { amount: "10 ml", item: "soy sauce" },
+        { amount: "100 gm", item: "tomato, chopped" },
+        { amount: "40 gm", item: "spring onion, chopped" },
+        { amount: "2-3 leaves", item: "bok choy, Whole" }
+    ],
+    instructions: [
+        "Boil the spaghetti in salted water until al dente.",
+        "Put Bok Choy in the same hot water, Drain and set aside.",
+        "In a large pan, heat little mustard oil until it begins to smoke slightly, then lower the heat.",
+        "Add finely chopped onions and sauté until golden brown.",
+        "Stir in the minced ginger and garlic ( Keep little garlic aside)",
+        "Cook for minutes until aromatic.",
+        "Add the keema and cook over medium heat, stirring often, until the meat is browned and cooked through (about 10–12 minutes).",
+        "Sprinkle in red chili powder and soy sauce. Stir well to combine the spices.",
+        "Add the chopped tomatoes and cook until soft and incorporated into the mixture.",
+        "For sauce, add chili flakes, timur, and salt in a bowl.",
+        "Heat the remaining mustard oil in a small pan, then pour it over the chili-timur mixture to create a spicy oil.",
+        "For searving put a little oil in a bowl, add the cooked spaghettion top.",
+        "Add the keema mixture on top of the noodles.",
+        "Garnish with chopped spring onions and bok choy leaves.",
+        "Drizzle the spicy oil over the dish before serving."
+    ]
+},
+{
+    id: 15,
+    title: "Tortilla Egg Wrap with Spicy Veg Sauce",
+    description: "A flavorful tortilla wrap loaded with veggies, eggs, and a tangy-spicy homemade sauce",
+    servings: 1,
+    cookingTime: 20,
+    imageUrl: "https://ministryofcurry.com/wp-content/uploads/2023/11/Kolkatta-Egg-Roll-4.jpg", // Replace with your own image if needed
+    category: "Non-Veg",
+    ingredients: [
+        { amount: "2", item: "tortilla" },
+        { amount: "2", item: "whole eggs" },
+        { amount: "2 medium", item: "onions, sliced" },
+        { amount: "30 gm", item: "carrot, julienned" },
+        { amount: "40 gm", item: "capsicum, julienned" },
+        { amount: "2 tsp", item: "vinegar" },
+        { amount: "2", item: "green chilies, chopped" },
+
+        // For the sauce
+        { amount: "80 gm", item: "tomato ketchup" },
+        { amount: "2 tbsp", item: "red chili sauce or crushed red chilies" },
+        { amount: "1/2 tsp", item: "chaat masala" },
+        { amount: "1 tsp", item: "sugar" }
+    ],
+    instructions: [
+        "This recipe is for 2 portion so 1 egg and 1 tortilla per person. No Cheating.",
+        "In a bowl, add sliced onion, carrot, capsicum, vinegar, and chopped green chilies.",
+        "For sauce, mix tomato ketchup, red chili sauce, chaat masala, and sugar in a small bowl until well combined.",
+        "Heat a non-stick pan over medium heat. Add bitten eggs with chopped chilly and salt.",
+        "Put the tortilla on top of the eggs and let it cook for a minute until the eggs are set.",
+        "Flip the tortilla with eggs onto a plate, then add the veggie mixture on one half of the tortilla.",
+        "Drizzle the spicy sauce over the veggies.",
+        "Roll the tortilla tightly, folding in the sides to secure the filling.",
+        "Serve hot with extra sauce on the side if desired.",
+        "Note: You can skip egg and add sauteed paneer or Chicken as yu liking."
+    ]
+}
+
+
 
 ];
