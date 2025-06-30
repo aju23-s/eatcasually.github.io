@@ -8,17 +8,18 @@ const recipes = [
         imageUrl: "https://www.allrecipes.com/thmb/FE0PiuuR0Uh06uVh1c2AsKjRGbc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-Good-old-Fashioned-Pancakes-mfs_002-0e249c95678f446291ebc9408ae64c05.jpg",
         category: "Bakery",
         ingredients: [
-            { amount: "1 1/2 cups", item: "all-purpose flour" },
-            { amount: "3 1/2 teaspoons", item: "baking powder" },
+            { amount: "1 cups", item: "all-purpose flour" },
+            { amount: "1 teaspoons", item: "baking powder" },
             { amount: "1/4 teaspoon", item: "salt" },
             { amount: "1 tablespoon", item: "sugar" },
-            { amount: "1 1/4 cups", item: "milk" },
+            { amount: "1/2 cups", item: "milk" },
             { amount: "1", item: "egg" },
+            { amount: "1/2 teaspoon", item:"Vanilla essance"},
             { amount: "3 tablespoons", item: "melted butter" }
         ],
         instructions: [
             "Mix flour, baking powder, salt, and sugar in a bowl",
-            "In another bowl, whisk milk, egg, and melted butter",
+            "In another bowl, whisk milk, egg, vanilla and melted butter",
             "Combine wet and dry ingredients until just mixed",
             "Heat a griddle or pan over medium heat",
             "Pour 1/4 cup batter for each pancake",
