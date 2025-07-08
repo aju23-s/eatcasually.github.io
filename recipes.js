@@ -453,7 +453,67 @@ const recipes = [
         "Serve hot with extra sauce on the side if desired.",
         "Note: You can skip egg and add sauteed paneer or Chicken as yu liking."
     ]
+},
+{
+    id: 16,
+    title: "Vegetable Fried Rice",
+    description: "A quick and delicious fried rice loaded with vegetables and flavored with soy and vinegar",
+    servings: 4,
+    cookingTime: 25,
+    imageUrl: "https://images.unsplash.com/photo-1596560548464-f010549b84d7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with your own image if needed
+    category: "Veg",
+    ingredients: [
+        { amount: "500 gm", item: "cooked rice (preferably cooled)" },
+        { amount: "50 gm", item: "onion, finely chopped" },
+        { amount: "60 gm", item: "cabbage, shredded" },
+        { amount: "30 gm", item: "carrot, julienned" },
+        { amount: "50 gm", item: "capsicum, julienned" },
+        { amount: "10 gm", item: "ginger-garlic chopped" },
+        { amount: "1 tbsp", item: "soy sauce" },
+        { amount: "1/2 tbsp", item: "vinegar" },
+        { amount: "1 tbsp", item: "tomato ketchup" },
+        { amount: "to taste", item: "salt and pepper" }
+    ],
+    instructions: [
+        "Heat a large pan or wok over high heat and add a small amount of oil.",
+        "Add chopped onions and stir-fry for a minutes until translucent.",
+        "Add ginger-garlic and stir until aromatic.",
+        "(For non-veg option, you can add chicken at this stage. And once chicken is cooked, add the vegetables.)",
+        "Toss in the cabbage, carrot, and capsicum. Stir-fry for 3–4 minutes, keeping the vegetables slightly crunchy.",
+        "Add soy sauce, vinegar, and ketchup. Mix well to coat the vegetables evenly.",
+        "Now add the cooked rice and gently mix everything together. Break up any clumps while mixing.",
+        "Season with salt and freshly ground pepper to taste.",
+        "Stir-fry for another 2–3 minutes on high heat to combine all flavors.",
+        "Serve hot as a main dish or with a side of stir-fried vegetables."
+    ]
+},
+{
+    id: 17,
+    title: "Salchipapa",
+    description: "A quick and delicious Snacks loaded with Sausage, fries and Spicy sauces.",
+    servings: 2,
+    cookingTime: 15,
+    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgluttodigest.com%2Fsalchipapas-latin-fries-bring-all-the-flavor%2F&psig=AOvVaw3tR8G-D4wjDrLyXXOL_HDG&ust=1752072699447000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKiG9t7BrY4DFQAAAAAdAAAAABAE", // Replace with your own image if needed
+    category: "Non-veg",
+    ingredients: [
+        { amount: "3 whole", item: "Sausage (Sliced)" },
+        { amount: "10 gm", item: "onion, finely chopped" },
+        { amount: "5 gm", item: "Garlic (Chopped)" },
+        { amount: "150 gm", item: "French Fries" },
+        { amount: "50 gm", item: "Mayo" },
+        { amount: "40 gm", item: "tomato ketchup" },
+        { amount: "to taste", item: "salt and pepper" }
+    ],
+    instructions: [
+        "Heat the pan and saute Onion garlic.",
+        "After a aromatic smell add sliced sausage and cook until golden brown.",
+        "Add Salt Pepper as your likings.",
+        "fry the French fries until golden and crispy.",
+        "In a serving plate, add the cooked sausage and onion mixture on top of the French fries.",
+        "Drizzle with mayonnaise and tomato ketchup."
+    ]
 }
+
 
 
 
