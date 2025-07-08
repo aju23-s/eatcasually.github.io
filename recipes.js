@@ -493,7 +493,7 @@ const recipes = [
     description: "A quick and delicious Snacks loaded with Sausage, fries and Spicy sauces.",
     servings: 2,
     cookingTime: 15,
-    imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgluttodigest.com%2Fsalchipapas-latin-fries-bring-all-the-flavor%2F&psig=AOvVaw3tR8G-D4wjDrLyXXOL_HDG&ust=1752072699447000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKiG9t7BrY4DFQAAAAAdAAAAABAE", // Replace with your own image if needed
+    imageUrl: "https://gluttodigest.com/wp-content/uploads/2021/07/salchipapas-1080x720.jpg", // Replace with your own image if needed
     category: "Non-veg",
     ingredients: [
         { amount: "3 whole", item: "Sausage (Sliced)" },
