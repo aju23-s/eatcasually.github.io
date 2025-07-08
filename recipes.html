@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat Casually</title>
-    <link rel="icon" type="image/x-icon" href="log.png">
+    <link rel="icon" type="image/x-icon" href="Images/log.png">
     <link rel="stylesheet" href="styles.css">
-    <meta name="google-adsense-account" content="ca-pub-6007547271180036">
+
+
+
+
 </head>
 
 <body>
@@ -48,6 +51,8 @@
                 <li><button class="category-btn" data-category="Salad">Salad</button></li>
             </ul>
         </aside>
+        <button id="scrollTopBtn">⬆️</button>
+        <button id="scrollBottomBtn">⬇️</button>
 
         <main class="recipe-grid">
             <!-- Recipe cards will be inserted here by JavaScript -->
@@ -58,38 +63,20 @@
 
     <!-- Recipe Modal -->
     <div id="recipeModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" id="modalContent">
             <span class="close">&times;</span>
             <div id="recipeDetails">
                 <!-- Recipe details will be inserted here -->
             </div>
+            <button onclick="exportModalContent()">📄 Download Recipe as PDF</button>
         </div>
     </div>
-
-
-
-
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6007547271180036"
-     crossorigin="anonymous"></script>
-<!-- blog -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6007547271180036"
-     data-ad-slot="6767961971"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-    
 
     <!-------- Footer ----------->
     <footer class="minimal-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html"><img src="log.png"></a>
+                <a href="index.html"><img src="Images/log.png"></a>
                 <p>We are here to let you cook, with ease.</p>
             </div>
 
@@ -110,8 +97,8 @@
                 </div>
                 <div class="footer-social">
                     <div class="icons">
-                        <a href="#"><img src="insta.png"></a>
-                        <a href="#"><img src="gmail.png"></a>
+                        <a href="#"><img src="Images/insta.png"></a>
+                        <a href="#"><img src="Images/gmail.png"></a>
                     </div>
                     <span>© 2025 All Rights Reserved</span>
                 </div>
@@ -123,6 +110,8 @@
 
     <script src="recipes.js"></script>
     <script src="script.js"></script>
+
+
 
     <script>
         if ('serviceWorker' in navigator) {
@@ -140,6 +129,50 @@
             navLinks.classList.toggle('show');
         });
     </script>
+
+
+
+
+
+<style>
+#scrollTopBtn, #scrollBottomBtn {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+#scrollTopBtn {
+  bottom: 80px;
+}
+
+#scrollBottomBtn {
+  bottom: 20px;
+}
+
+#scrollTopBtn:hover, #scrollBottomBtn:hover {
+  background-color: #555;
+}
+</style>
+
+
+
+    <script>
+        document.getElementById("scrollTopBtn").onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        document.getElementById("scrollBottomBtn").onclick = function () {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        };
+    </script>
+
 
 
 
