@@ -11,9 +11,7 @@ let selectedCategory = 'All';
 let searchTerm = '';
 
 
-// Create recipe cards
 function createRecipeCards() {
-    displayFilteredRecipes(recipes);
     recipeGrid.innerHTML = recipes.map(recipe => `
         <div class="recipe-card" onclick="showRecipe(${recipe.id})">
             <img src="${recipe.imageUrl}" alt="${recipe.title}">
@@ -28,6 +26,7 @@ function createRecipeCards() {
         </div>
     `).join('');
 }
+
 
 // Add search functionality
 function applyFilters() {
@@ -69,6 +68,7 @@ function displayFilteredRecipes(filteredRecipes) {
             </div>
         `;
     }
+
 }
 
 
@@ -102,7 +102,7 @@ categoryButtons.forEach(button => {
 function showRecipe(id) {
     const recipe = recipes.find(r => r.id === id);
     const isFavorite = favorites.includes(id);
-    
+
     recipeDetails.innerHTML = `
         <img src="${recipe.imageUrl}" alt="${recipe.title}">
         <button class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${id})">
@@ -116,20 +116,29 @@ function showRecipe(id) {
         </div>
         <h3>Ingredients</h3>
         <ul class="ingredients-list">
-            ${recipe.ingredients.map(ing => 
-                `<li><strong>${ing.amount}</strong> ${ing.item}</li>`
-            ).join('')}
+            ${recipe.ingredients.map(ing =>
+        `<li><strong>${ing.amount}</strong> ${ing.item}</li>`
+    ).join('')}
         </ul>
         <h3>Instructions</h3>
         <ol class="instructions-list">
-            ${recipe.instructions.map(step => 
-                `<li>${step}</li>`
-            ).join('')}
+            ${recipe.instructions.map(step =>
+        `<li>${step}</li>`
+    ).join('')}
         </ol>
     `;
-    
+
     modal.style.display = 'block';
 }
+
+
+
+
+
+
+
+
+
 
 // Toggle favorite
 function toggleFavorite(id) {
@@ -144,12 +153,12 @@ function toggleFavorite(id) {
 }
 
 // Close modal
-closeBtn.onclick = function() {
+closeBtn.onclick = function () {
     modal.style.display = 'none';
 }
 
 // Close modal when clicking outside
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target === modal) {
         modal.style.display = 'none';
     }
@@ -157,3 +166,6 @@ window.onclick = function(event) {
 
 // Initialize the page
 createRecipeCards();
+
+
+
